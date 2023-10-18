@@ -32,6 +32,12 @@ export default function App() {
         <Image source={require('./assets/authIcon.jpg')} style={styles.authIcon}/>
           Login / Register
         </View>
+
+        <View style={styles.icons}> 
+        <Image source={require('./assets/searchIcon.jpg')} style={styles.searchIcon}/>
+        <Image source={require('./assets/cartIcon.jpg')} style={styles.cartIcon}/>
+        <Image source={require('./assets/loveIcon.jpg')} style={styles.loveIcon}/>
+        </View>
     
     </View>
   );
@@ -103,6 +109,34 @@ const styles = StyleSheet.create({
     borderRadius: '37px',
     flexDirection: 'row',
     color: '#23A6F0'
+  },
+
+  searchIcon:{
+    width: '20px',
+    height: '20px',
+  },
+
+  cartIcon:{
+    width: '20px',
+    height: '20px',
+    display: 'flex',
+    padding: '15px',
+    alignItems: 'center',
+    marginTop: '1rem',
+    borderRadius: '1px'
+  },
+
+  loveIcon:{
+    width: '20px',
+    height: '20px',
+    marginTop: '1rem',
+    borderRadius: '1px'
+  },
+
+  icons:{
+    display: 'inline-flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   }
 
 });
