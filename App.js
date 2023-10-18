@@ -44,6 +44,15 @@ export default function App() {
           <Image source={require('./assets/arrow.jpg')} style={styles.arrow}/>
           <Text>Shop</Text>
         </View>
+
+        <View style={styles.imageslide}>
+          <Image source={require('./assets/couch.jpg')} style={styles.couch} />
+          <Image source={require('./assets/Chair.jpg')} style={styles.Chair} />
+          <Image source={require('./assets/couchSlide.jpg')} style={styles.couchSlide} />
+
+
+
+        </View>
     
     </View>
   );
@@ -169,6 +178,41 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     lineHeight: '24px', /* 171.429% */
     letterSpacing: '0.2px',
+  },
+
+  couch:{
+    width: '348px',
+    height: '277px',
+    flexShrink: '0',
+  },
+
+  imageslide:{
+    width: '348px',
+    height: '394px',
+    flexShrink: '0',
+    borderRadius: '5px',
+    lightTextColor: '#FFFFFF',
+  },
+
+  ChevronLeft:{
+    width: '24px',
+    height: '44.471px',
+    flexShrink: '0',
+  },
+
+  Chair:{
+    width: '100px',
+    height: '75px',
+    flexShrink: '0',
+  },
+
+  couchSlide:{
+    width: '100px',
+    height: '75px',
+    flexShrink: '0',
+    opacity: '0.5',
+    // background: url('./assets/couchSlide.jpg'), lightgray: 50% / cover no-repeat, url(<path-to-image>), lightgray 50% / cover: 'no-repeat'
   }
+
 
 });
