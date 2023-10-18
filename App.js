@@ -29,14 +29,20 @@ export default function App() {
       </View>
 
         <View style={styles.authView}>
-        <Image source={require('./assets/authIcon.jpg')} style={styles.authIcon}/>
-          Login / Register
+          <Image source={require('./assets/authIcon.jpg')} style={styles.authIcon}/>
+            Login / Register
         </View>
 
         <View style={styles.icons}> 
-        <Image source={require('./assets/searchIcon.jpg')} style={styles.searchIcon}/>
-        <Image source={require('./assets/cartIcon.jpg')} style={styles.cartIcon}/>
-        <Image source={require('./assets/loveIcon.jpg')} style={styles.loveIcon}/>
+          <Image source={require('./assets/searchIcon.jpg')} style={styles.searchIcon}/>
+          <Image source={require('./assets/cartIcon.jpg')} style={styles.cartIcon}/>
+          <Image source={require('./assets/loveIcon.jpg')} style={styles.loveIcon}/>
+        </View>
+
+        <View style={styles.hAnds}>
+          <Text style={styles.Ahome}>Home</Text>
+          <Image source={require('./assets/arrow.jpg')} style={styles.arrow}/>
+          <Text>Shop</Text>
         </View>
     
     </View>
@@ -137,6 +143,32 @@ const styles = StyleSheet.create({
     display: 'inline-flex',
     flexDirection: 'column',
     alignItems: 'center',
+  },
+
+  hAnds:{
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: '5px',
+    alignSelf: 'stretch',
+    marginLeft: '37rem'
+  },
+
+  arrow:{
+    width: '7px',
+    height: '12px',
+  },
+
+  Ahome:{
+    color: '#252B42',
+    textAlign: 'center',
+    /* link */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 171.429% */
+    letterSpacing: '0.2px',
   }
 
 });
