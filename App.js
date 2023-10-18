@@ -1,11 +1,33 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
+import { Button, StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
+  // const [name, setName] = useState('Ken');
+  // const [person, setPerson] = useState({name: 'Taiwo', age: '25'})
+
+  // const clickHandler = () => {
+  //   setName('Kenny')
+  //   setPerson({name: 'Taiye', age: 26})
+  // }
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.BandageText}>
+          <Text>Bandage</Text>
+          <Image source={require('./assets/toggleicon.jpg')} style={styles.Img}/>
+          
+      </View>
+      <View style={styles.NavBar}>
+        <Text>Home</Text>
+        <Text>Shop</Text>
+        <Text>About</Text>
+        <Text>Blog</Text>
+        <Text>Contact</Text>
+        <Text>Pages</Text>
+
+      </View>
+    
     </View>
   );
 }
@@ -17,4 +39,25 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  NavBar:{
+    display: 'inline-flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '30px',
+   
+  },
+
+  BandageText:{
+    width: '414px',
+    height: '879px',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+
+  Img:{
+    width: '24px',
+    height: '13.714px',
+    flexShrink: '0'
+  }
+
 });
