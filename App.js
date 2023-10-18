@@ -19,14 +19,19 @@ export default function App() {
           
       </View>
       <View style={styles.NavBar}>
-        <Text>Home</Text>
+        <Text style={styles.home}>Home</Text>
         <Text>Shop</Text>
         <Text>About</Text>
         <Text>Blog</Text>
-        <Text>Contact</Text>
+        <Text style={styles.contact}>Contact</Text>
         <Text>Pages</Text>
 
       </View>
+
+        <View style={styles.authView}>
+        <Image source={require('./assets/authIcon.jpg')} style={styles.authIcon}/>
+          Login / Register
+        </View>
     
     </View>
   );
@@ -44,6 +49,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     gap: '30px',
+    marginTop: '-47rem'
    
   },
 
@@ -57,7 +63,46 @@ const styles = StyleSheet.create({
   Img:{
     width: '24px',
     height: '13.714px',
-    flexShrink: '0'
+    flexShrink: '0',
+    marginRight: '8rem'
+  },
+
+  home:{
+    color: '#252B42',
+    textAlign: 'center',
+    fontFamily: 'Montserrat',
+    fontSize: '30px',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    lineHeight: '45px', 
+    letterSpacing: '0.2px'
+  },
+
+  contact:{
+    color: '#737373',
+    textAlign: 'center',
+    /* mobile-menu */
+    fontFamily: 'Montserrat',
+    fontSize: '26px',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '150%', /* 150% */
+    letterSpacing: '0.2px'
+  },
+
+  authIcon:{
+    width: '25px',
+    height: '25px',
+  },
+
+  authView:{
+    display: 'flex',
+    padding: '15px',
+    alignItems: 'center',
+    gap: '5px',
+    borderRadius: '37px',
+    flexDirection: 'row',
+    color: '#23A6F0'
   }
 
 });
