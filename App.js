@@ -97,6 +97,9 @@ export default function App() {
           <Text style={styles.reviews}>Reviews</Text>
           <Text style={styles.count}>(0)</Text>
         </View> 
+        <View style={styles.homeframe}>
+          <Image source={require('./assets/houseframe.jpg')} style={styles.houseframe} />
+        </View>
     </View>
   );
 }
@@ -497,6 +500,12 @@ const styles = StyleSheet.create({
     lineHeight: '24px', /* 171.429% */
     letterSpacing: '0.2px',
   },
+
+  houseframe:{
+    width: '321px',
+    height: '271px',
+    flexShrink: '0',
+  }
 
 
 });
