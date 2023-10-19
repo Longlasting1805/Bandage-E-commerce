@@ -62,6 +62,13 @@ export default function App() {
             <Image source={require('./assets/unstaricon.jpg')} style={styles.unstaricon} />
             <Text style={styles.review}>10 Reviews</Text>
           </View>
+          <View style={styles.amount}>
+            <Text style={styles.price}>$1,139.33</Text>
+          </View>
+          <View style={styles.available}>
+            <Text style={styles.availability}>Availability : </Text>
+            <Text style={styles.stock}>In Stock</Text>
+          </View>
         </View>   
     </View>
   );
@@ -271,7 +278,47 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     lineHeight: '24px', /* 171.429% */
     letterSpacing: '0.2px',
-}
+  },
+
+  price:{
+    color: '#252B42',
+    textAlign: 'center',
+    /* h3 */
+    fontFamily: 'Montserrat',
+    fontSize: '24px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '32px', /* 133.333% */
+    letterSpacing: '0.1px',
+    marginRight: '14rem',
+    marginTop: '1rem'
+  },
+
+  available:{
+    flexDirection: 'row',
+  },
+
+  availability:{
+    color: '#737373',
+    /* h6 */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 171.429% */
+    letterSpacing: '0.2px',
+  },
+
+  stock:{
+    color: '#23A6F0',
+/* h6 */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 171.429% */
+    letterSpacing: '0.2px',
+  }
 
 
 });
