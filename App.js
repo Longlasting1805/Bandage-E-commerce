@@ -54,12 +54,13 @@ export default function App() {
         </View>
         <View style={styles.floatingphone}>
           <Text style={styles.floating}>Floating Phone</Text>
-          <View>
-            <Image source={require('./assets/.jpg')} style={styles.} />
-            <Image source={require('./assets/.jpg')} style={styles.} />
-            <Image source={require('./assets/.jpg')} style={styles.} />
-            <Image source={require('./assets/.jpg')} style={styles.} />
-            <Image source={require('./assets/.jpg')} style={styles.} />
+          <View style={styles.rating}>
+            <Image source={require('./assets/staricon.jpg')} style={styles.staricon} />
+            <Image source={require('./assets/staricon.jpg')} style={styles.staricon} />
+            <Image source={require('./assets/staricon.jpg')} style={styles.staricon} />
+            <Image source={require('./assets/staricon.jpg')} style={styles.staricon} />
+            <Image source={require('./assets/unstaricon.jpg')} style={styles.unstaricon} />
+            <Text style={styles.review}>10 Reviews</Text>
           </View>
         </View>   
     </View>
@@ -243,7 +244,34 @@ const styles = StyleSheet.create({
     letterSpacing: '0.2px',
     color: '#252B42',
     marginRight: '11rem'
-  }
+  },
+
+  rating:{
+    display: 'inline-flex',
+    alignItems: 'flex-start',
+    gap: '10px',
+    flexDirection: 'row',
+  },
+
+  staricon:{
+    width: '22.014px',
+    height: '22.014px',
+  },
+
+  unstaricon:{
+    width: '22.014px',
+    height: '22.014px',
+  },
+  review:{
+    color: '#737373',
+/* h6 */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 171.429% */
+    letterSpacing: '0.2px',
+}
 
 
 });
