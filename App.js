@@ -47,13 +47,21 @@ export default function App() {
 
         <View style={styles.imageslide}>
           <Image source={require('./assets/couch.jpg')} style={styles.couch} />
-          <Image source={require('./assets/Chair.jpg')} style={styles.Chair} />
-          <Image source={require('./assets/couchSlide.jpg')} style={styles.couchSlide} />
-
-
-
+          <View style={styles.imgSlide}>
+            <Image source={require('./assets/Chair.jpg')} style={styles.Chair} />
+            <Image source={require('./assets/couchSlide.jpg')} style={styles.couchSlide} />
+          </View>
         </View>
-    
+        <View style={styles.floatingphone}>
+          <Text style={styles.floating}>Floating Phone</Text>
+          <View>
+            <Image source={require('./assets/.jpg')} style={styles.} />
+            <Image source={require('./assets/.jpg')} style={styles.} />
+            <Image source={require('./assets/.jpg')} style={styles.} />
+            <Image source={require('./assets/.jpg')} style={styles.} />
+            <Image source={require('./assets/.jpg')} style={styles.} />
+          </View>
+        </View>   
     </View>
   );
 }
@@ -212,6 +220,29 @@ const styles = StyleSheet.create({
     flexShrink: '0',
     opacity: '0.5',
     // background: url('./assets/couchSlide.jpg'), lightgray: 50% / cover no-repeat, url(<path-to-image>), lightgray 50% / cover: 'no-repeat'
+  },
+
+  imgSlide:{
+    display: 'flex',
+    width: '219px',
+    height: '75px',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    gap: '19px',
+    flexShrink: '0',
+    flexDirection: 'row',
+    marginTop: '1rem'
+  },
+
+  floating:{
+    fontFamily: 'Montserrat',
+    fontSize: '20px',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    lineHeight: '30px', /* 150% */
+    letterSpacing: '0.2px',
+    color: '#252B42',
+    marginRight: '11rem'
   }
 
 
