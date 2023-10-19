@@ -79,11 +79,16 @@ export default function App() {
             <Image source={require('./assets/line.jpg')} style={styles.line} />
           </View>
           <View style={styles.eclipes}>
-          <Image source={require('./assets/blue.jpg')} style={styles.blue} />
-          <Image source={require('./assets/green.jpg')} style={styles.green} />
-          <Image source={require('./assets/orange.jpg')} style={styles.orange} />
-          <Image source={require('./assets/dark.jpg')} style={styles.orange} />
-
+            <Image source={require('./assets/blue.jpg')} style={styles.blue} />
+            <Image source={require('./assets/green.jpg')} style={styles.green} />
+            <Image source={require('./assets/orange.jpg')} style={styles.orange} />
+            <Image source={require('./assets/dark.jpg')} style={styles.orange} />
+          </View>
+          <View style={styles.option}>
+            <Button style={styles.button} title='Select Options' uppercase={false}></Button>
+            <Image source={require('./assets/like.jpg')} style={styles.like} />
+            <Image source={require('./assets/basket.jpg')} style={styles.basket} />
+            <Image source={require('./assets/more.jpg')} style={styles.more} />
           </View>
         </View>   
     </View>
@@ -192,7 +197,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: '5px',
     alignSelf: 'stretch',
-    marginLeft: '37rem'
+    marginLeft: '37rem',
+    marginTop: '1rem',
+    background: '#FAFAFA',
   },
 
   arrow:{
@@ -381,6 +388,47 @@ const styles = StyleSheet.create({
     width: '30px',
     height: '30px',
   },
+
+ option:{
+  display: 'inline-flex',
+  alignItems: 'flex-start',
+  gap: '10px',
+  flexDirection: 'row',
+  marginTop: '2rem'
+ },
+
+  button:{
+    color: '#FFF',
+    textAlign: 'center',
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px' /* 171.429% */,
+    letterSpacing: '0.2px',
+    textTransform: 'lowercase'
+    
+    
+  },
+
+  more:{
+    width: '30px',
+    height: '30px',
+    flexShrink: '0',
+
+  },
+
+  like:{
+    width: '30px',
+    height: '30px',
+    flexShrink: '0',
+  },
+
+  basket:{
+    width: '30px',
+    height: '30px',
+    flexShrink: '0',
+  }
 
 
 });
