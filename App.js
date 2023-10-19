@@ -90,7 +90,13 @@ export default function App() {
             <Image source={require('./assets/basket.jpg')} style={styles.basket} />
             <Image source={require('./assets/more.jpg')} style={styles.more} />
           </View>
-        </View>   
+        </View>  
+        <View style={styles.descriptionreview}>
+          <Text style={styles.descriptiontext}>Description</Text>
+          <Text style={styles.addinfos}>Additional Information</Text>
+          <Text style={styles.reviews}>Reviews</Text>
+          <Text style={styles.count}>(0)</Text>
+        </View> 
     </View>
   );
 }
@@ -428,7 +434,69 @@ const styles = StyleSheet.create({
     width: '30px',
     height: '30px',
     flexShrink: '0',
-  }
+  },
+
+  descriptionreview:{
+    display: 'flex',
+    width: '414px',
+    height: '91px',
+    padding: ('10px', '21px', '9px', '21px'),
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: '#FFF',
+    flexDirection: 'row',
+    gap: '10px',
+    marginRight: '2.5rem',
+  },
+
+  descriptiontext:{
+    color: '#737373',
+    textAlign: 'center',
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '600',
+    lineHeight: '24px', /* 171.429% */
+    letterSpacing: '0.2px',
+    textDecorationLine: 'underline',
+
+  },
+
+  addinfos:{
+    color: '#737373',
+    textAlign: 'center',
+    /* link */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 171.429% */
+    letterSpacing: '0.2px',
+  },
+
+  reviews:{
+    color: '#737373',
+    textAlign: 'center',
+    /* link */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 171.429% */
+    letterSpacing: '0.2px',
+  },
+
+  count:{
+    color: '#23856D',
+    textAlign: 'center',
+    /* link */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 171.429% */
+    letterSpacing: '0.2px',
+  },
 
 
 });
