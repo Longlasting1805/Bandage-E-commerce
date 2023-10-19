@@ -69,6 +69,22 @@ export default function App() {
             <Text style={styles.availability}>Availability : </Text>
             <Text style={styles.stock}>In Stock</Text>
           </View>
+          <View>
+            <Text style={styles.description}>Met Minim Mollie non desert<br></br>
+              Alamo est sit cliquey dolor do<br></br>
+              met sent.RELIT official consequent<br></br>
+              door ENIM RELIT Mollie. Excitation<br></br>
+              Venial consequent sent nostrum met.<br></br>
+            </Text>
+            <Image source={require('./assets/line.jpg')} style={styles.line} />
+          </View>
+          <View style={styles.eclipes}>
+          <Image source={require('./assets/blue.jpg')} style={styles.blue} />
+          <Image source={require('./assets/green.jpg')} style={styles.green} />
+          <Image source={require('./assets/orange.jpg')} style={styles.orange} />
+          <Image source={require('./assets/dark.jpg')} style={styles.orange} />
+
+          </View>
         </View>   
     </View>
   );
@@ -318,7 +334,53 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     lineHeight: '24px', /* 171.429% */
     letterSpacing: '0.2px',
-  }
+  },
+
+  description:{
+    color: '#858585',
+    /* paragraph */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    lineHeight: '20px', /* 142.857% */
+    letterSpacing: '0.2px',
+    marginTop: '1rem',
+
+  },
+  line:{
+    width: '283px',
+    height: '1px',
+    color: '#BDBDBD',
+    marginBottom: '1rem'
+  },
+
+  eclipes:{
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '10px',
+    flexDirection: 'row',
+  },
+
+  blue:{
+    width: '30px',
+    height: '30px',
+  },
+
+  green:{
+    width: '30px',
+    height: '30px',
+  },
+
+  orange:{
+    width: '30px',
+    height: '30px',
+  },
+
+  dark:{
+    width: '30px',
+    height: '30px',
+  },
 
 
 });
