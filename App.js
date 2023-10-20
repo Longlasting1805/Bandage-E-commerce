@@ -100,6 +100,9 @@ export default function App() {
         <View style={styles.homeframe}>
           <Image source={require('./assets/houseframe.jpg')} style={styles.houseframe} />
         </View>
+        <View style={styles.quickjump}>
+          <Text style={styles.quickjumptext}> the quick fox jumps over</Text>
+        </View>
     </View>
   );
 }
@@ -505,6 +508,18 @@ const styles = StyleSheet.create({
     width: '321px',
     height: '271px',
     flexShrink: '0',
+  },
+
+  quickjumptext:{
+    color: '#252B42',
+    /* h3 */
+    fontFamily: 'Montserrat',
+    fontSize: '24px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '32px', /* 133.333% */
+    letterSpacing: '0.1px',
+    marginTop: '2rem'
   }
 
 
