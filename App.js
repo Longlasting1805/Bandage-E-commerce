@@ -102,6 +102,51 @@ export default function App() {
         </View>
         <View style={styles.quickjump}>
           <Text style={styles.quickjumptext}> the quick fox jumps over</Text>
+
+          <Text style={styles.description}>Met Minim Mollie non desert<br></br>
+              Alamo est sit cliquey dolor do<br></br>
+              met sent.RELIT official consequent<br></br>
+              door ENIM RELIT Mollie. Excitation<br></br>
+              Venial consequent sent nostrum met.<br></br>
+            </Text>
+
+            <Text style={styles.description}>Met Minim Mollie non desert<br></br>
+              Alamo est sit cliquey dolor do<br></br>
+              met sent.RELIT official consequent<br></br>
+              door ENIM RELIT Mollie. Excitation<br></br>
+              Venial consequent sent nostrum met.<br></br>
+            </Text>
+
+            <Text style={styles.description}>Met Minim Mollie non desert<br></br>
+              Alamo est sit cliquey dolor do<br></br>
+              met sent.RELIT official consequent<br></br>
+              door ENIM RELIT Mollie. Excitation<br></br>
+              Venial consequent sent nostrum met.<br></br>
+            </Text>
+        </View>
+
+        <View style={styles.quickjumptext}> 
+            the quick fox jumps over
+
+            <View style={styles.arrowfox}>
+            <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
+            <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
+            </View>
+
+            <View style={styles.arrowfox}>
+            <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
+            <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
+            </View>
+
+            <View style={styles.arrowfox}>
+            <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
+            <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
+            </View>
+
+            <View style={styles.arrowfox}>
+            <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
+            <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
+            </View>
         </View>
     </View>
   );
@@ -114,6 +159,32 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  iconarrow:{
+
+    width: '9px',
+    height: '16px',
+  },
+
+  arrowfox:{
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: '20px',
+    flexDirection: 'row',
+    marginTop: '1rem',
+  },
+
+  foxtext:{
+    color: '#737373',
+    /* h6 */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 171.429% */
+    letterSpacing: '0.2px',
+  },
+
   NavBar:{
     display: 'inline-flex',
     flexDirection: 'column',
@@ -520,6 +591,17 @@ const styles = StyleSheet.create({
     lineHeight: '32px', /* 133.333% */
     letterSpacing: '0.1px',
     marginTop: '2rem'
+  },
+
+  metminim:{
+    color: '#737373',
+    /* paragraph */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    lineHeight: '20px', /* 142.857% */
+    letterSpacing: '0.2px',
   }
 
 
