@@ -174,13 +174,58 @@ export default function App() {
 
           <Text style={styles.graphic}>Graphic Design</Text>
           <Text style={styles.english}>English Department</Text>
-          
         </View>
-        <View style={styles.price}>
+
+        <View style={styles.cprice}>
+          <Text style={styles.oldprice}>$16.48</Text>
+          <Text style={styles.newprice}>$6.48</Text>
+        </View>
+
+        <View>
+          <Image source={require('./assets/blackwhite.jpg')} style={styles.productcover} />
+          <Text style={styles.graphic}>Graphic Design</Text>
+          <Text style={styles.english}>English Department</Text>
+        </View>
+          <View style={styles.cprice}>
             <Text style={styles.oldprice}>$16.48</Text>
             <Text style={styles.newprice}>$6.48</Text>
           </View>
-        
+          
+          <View>
+            <Image source={require('./assets/forkspoon.jpg')} style={styles.productcover} />
+
+            <Text style={styles.graphic}>Graphic Design</Text>
+            <Text style={styles.english}>English Department</Text>
+          </View>
+
+          <View style={styles.cprice}>
+            <Text style={styles.oldprice}>$16.48</Text>
+            <Text style={styles.newprice}>$6.48</Text>
+          </View>    
+
+          <View>
+            <Image source={require('./assets/cups.jpg')} style={styles.productcover} />
+
+            <Text style={styles.graphic}>Graphic Design</Text>
+            <Text style={styles.english}>English Department</Text>
+          </View>
+
+           <View style={styles.cprice}>
+            <Text style={styles.oldprice}>$16.48</Text>
+            <Text style={styles.newprice}>$6.48</Text>
+          </View>
+
+          <View>
+            <Image source={require('./assets/hooli.jpg')} style={styles.hooli} />
+            <Image source={require('./assets/lya.jpg')} style={styles.lya} />
+            <Image source={require('./assets/lips.jpg')} style={styles.lips} />
+            <Image source={require('./assets/stripe.jpg')} style={styles.stripe} />
+            <Image source={require('./assets/aws.jpg')} style={styles.aws} />
+            <Image source={require('./assets/smiley.jpg')} style={styles.smiley} />
+
+
+
+          </View>
     </View>
   );
 }
@@ -193,13 +238,52 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  price:{
+  hooli:{
+    width: '149px',
+    height: '50px',
+    marginTop: '2rem',
+  },
+
+  lya:{
+    width: '139px',
+    height: '99px',
+    marginTop: '2rem',
+  },
+
+  lips:{
+    width: '149px',
+    height: '109px',
+    marginTop: '2rem',
+  },
+
+  stripe:{
+    width: '149px',
+    height: '60px',
+    marginTop: '2rem',
+  },
+
+  aws:{
+    width: '153px',
+    height: '93px',
+    marginTop: '2rem',
+  },
+
+  smiley:{
+    width: '149px',
+    height: '142px',
+    marginTop: '2rem',
+    
+  },
+
+  cprice:{
     display: 'flex',
+    flexDirection:'row',
     padding: ('5px', '3px'),
     alignItems: 'flex-start',
-    gap: '5px',
+    gap: '9px',
     color: '#BDBDBD',
-    flexDirection: 'row',
+    marginRight: '15rem',
+    
   },
 
   oldprice:{
@@ -212,7 +296,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     lineHeight: '24px', /* 150% */
     letterSpacing: '0.1px',
-
+    
   },
 
   newprice:{
