@@ -129,25 +129,58 @@ export default function App() {
             the quick fox jumps over
 
             <View style={styles.arrowfox}>
-            <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
-            <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
-            </View>
+              <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
+              <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
+              </View>
 
-            <View style={styles.arrowfox}>
-            <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
-            <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
-            </View>
+              <View style={styles.arrowfox}>
+              <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
+              <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
+              </View>
 
-            <View style={styles.arrowfox}>
-            <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
-            <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
-            </View>
+              <View style={styles.arrowfox}>
+              <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
+              <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
+              </View>
 
-            <View style={styles.arrowfox}>
-            <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
-            <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
+              <View style={styles.arrowfox}>
+              <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
+              <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
             </View>
         </View>
+        <View style={styles.quickjumptext}> 
+            the quick fox jumps over
+
+            <View style={styles.arrowfox}>
+              <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
+              <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
+              </View>
+
+              <View style={styles.arrowfox}>
+              <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
+              <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
+              </View>
+
+              <View style={styles.arrowfox}>
+              <Image source={require('./assets/iconarrow.jpg')} style={styles.iconarrow} />
+              <Text style={styles.foxtext}>the quick fox jumps over the lazy dog</Text>
+              </View>
+        </View>
+        <View>
+          <Text style={styles.sellertext}>BESTSELLER PRODUCTS</Text>
+
+          <Image source={require('./assets/anotherline.jpg')} style={styles.anotherline} />
+          <Image source={require('./assets/productcover.jpg')} style={styles.productcover} />
+
+          <Text style={styles.graphic}>Graphic Design</Text>
+          <Text style={styles.english}>English Department</Text>
+          
+        </View>
+        <View style={styles.price}>
+            <Text style={styles.oldprice}>$16.48</Text>
+            <Text style={styles.newprice}>$6.48</Text>
+          </View>
+        
     </View>
   );
 }
@@ -158,6 +191,92 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  price:{
+    display: 'flex',
+    padding: ('5px', '3px'),
+    alignItems: 'flex-start',
+    gap: '5px',
+    color: '#BDBDBD',
+    flexDirection: 'row',
+  },
+
+  oldprice:{
+    color: '#BDBDBD',
+    textAlign: 'center',
+    /* h5 */
+    fontFamily: 'Montserrat',
+    fontSize: '16px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 150% */
+    letterSpacing: '0.1px',
+
+  },
+
+  newprice:{
+    color: '#23856D',
+    textAlign: 'center',
+    /* h5 */
+    fontFamily: 'Montserrat',
+    fontSize: '16px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 150% */
+    letterSpacing: '0.1px',
+    width: '45px',
+  },
+
+  english:{
+    color: '#737373',
+    /* link */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 171.429% */
+    letterSpacing: '0.2px',
+    marginTop: '1rem',
+  },
+
+  graphic:{
+    color:'#252B42',
+/* h5 */
+    fontFamily: 'Montserrat',
+    fontSize: '16px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 150% */
+    letterSpacing: '0.1px',
+    marginTop: '2rem'
+  },
+
+  productcover:{
+    width: '348px',
+    height: '420px',
+    flexShrink: '0',
+  },
+
+  anotherline:{
+    width: '320px',
+    height: '1px',
+    color: '#ECECEC',
+    marginBottom: '1.5rem'
+  },
+
+  sellertext:{
+    width: '324px',
+    marginTop: '2rem',
+    color: '#252B42',
+    textAlign: 'center',
+    /* h3 */
+    fontFamily: 'Montserrat',
+    fontSize: '24px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '32px', /* 133.333% */
+    letterSpacing: '0.1px',
   },
 
   iconarrow:{
@@ -198,7 +317,8 @@ const styles = StyleSheet.create({
     width: '414px',
     height: '879px',
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    marginLeft: '4rem',
   },
 
   Img:{
@@ -439,7 +559,7 @@ const styles = StyleSheet.create({
 
   },
   line:{
-    width: '283px',
+    width: '233px',
     height: '1px',
     color: '#BDBDBD',
     marginBottom: '1rem'
