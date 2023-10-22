@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { Button, StyleSheet, Text, View, Image } from 'react-native';
+import { Button, StyleSheet, Text, View, Image, TextInput } from 'react-native';
 
 export default function App() {
   // const [name, setName] = useState('Ken');
@@ -223,8 +223,22 @@ export default function App() {
             <Image source={require('./assets/aws.jpg')} style={styles.aws} />
             <Image source={require('./assets/smiley.jpg')} style={styles.smiley} />
 
+          </View>
+          <View style={styles.socialroot}>
+            <Text style={styles.socialtext}>Bandage</Text>
+            <View style={styles.socialmedia}>
+               <Image source={require('./assets/facebook.jpg')} style={styles.facebook} />
+                <Image source={require('./assets/instagram.jpg')} style={styles.instagram} />
+                 <Image source={require('./assets/twitter.jpg')} style={styles.twitter} />
+            </View>
+          </View>
 
-
+         <View>
+              <Text style={styles.contacttext}>Get In Touch </Text>
+            </View>
+          <View style={styles.contactus}>
+              <TextInput style={styles.input} placeholder='Your Email'/>
+              <Button style={styles.subscribe} title='Subscribe' uppercase={false}></Button>
           </View>
     </View>
   );
@@ -236,6 +250,98 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  contacttext:{
+    color: '#252B42',
+    /* h5 */
+    fontFamily: 'Montserrat',
+    fontSize: '16px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 150% */
+    letterSpacing: '0.1px',
+    marginRight: '14rem'
+  },
+
+  subscribe:{
+    color: '#FFF',
+    textAlign: 'center',
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '28px', /* 200% */
+    letterSpacing: '0.2px',
+  },
+
+  input:{
+    display: 'flex',
+    width: '231px',
+    padding: ('8px', '8px', '8px', '8px'),
+    alignItems: 'center',
+    borderRadius: '5px',
+    border:  '#E6E6E6',
+    background: '#F9F9F9',
+    borderColor: '#777',
+    borderWidth: '1'
+  },
+
+  contactus:{
+    display: 'flex',
+    width: '321px',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    // gap: '20px',
+    flexDirection: 'row'
+  },
+
+  facebook:{
+    width: '24px',
+    height: '24px',
+    flexShrink: '0',
+  },
+
+  socialmedia:{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '20px',
+    flexDirection: 'row'
+  },
+
+  instagram:{
+    width: '24px',
+    height: '24px',
+    flexShrink: '0',
+  },
+
+  socialroot:{
+    display: 'flex',
+    width: '414px',
+    padding: ('0px', '45px', '0px', '44px'),
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '11px',
+    marginRight: '8rem',
+   
+  },
+
+  socialtext:{
+    color: '#252B42',
+/* h3 */
+    fontFamily: 'Montserrat',
+    fontSize: '24px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '32px', /* 133.333% */
+    letterSpacing: '0.1px',
+  },
+
+  twitter:{
+    width: '24px',
+    height: '19.765px',
+    flexShrink: '0',
   },
 
   hooli:{
