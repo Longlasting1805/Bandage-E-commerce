@@ -240,6 +240,11 @@ export default function App() {
               <TextInput style={styles.input} placeholder='Your Email'/>
               <Button style={styles.subscribe} title='Subscribe' uppercase={false}></Button>
           </View>
+
+          <View style={styles.madeby}>
+            Made With Love By <br></br>
+            Nigeria All Right Reserved
+          </View>
     </View>
   );
 }
@@ -250,6 +255,19 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  madeby:{
+    color: '#737373',
+    textAlign: 'center',
+    /* h6 */
+    fontFamily: 'Montserrat',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    lineHeight: '24px', /* 171.429% */
+    letterSpacing: '0.2px',
+    marginTop: '2rem'
   },
 
   contacttext:{
