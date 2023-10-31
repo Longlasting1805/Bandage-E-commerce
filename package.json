@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node app.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "server": "nodemon index.js"
+    "server": "nodemon app.js"
   },
   "dependencies": {
     "@expo/webpack-config": "^19.0.0",
